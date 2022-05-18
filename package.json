@@ -31,8 +31,10 @@
     "stylelint-config-standard-scss": "^3.0.0"
   },
   "lint-staged": {
-    "*.js": "npm run eslint:fix",
+    "*.js": "eslint --cache --fix",
     "*.scss": "stylelint:fix",
-    "*.{js,scss,html}": "prettier:fix"
+    "*.{js,scss,html}": "prettier:fix",
+    "*.css": "stylelint --fix",
+    "*.stylelint": "prettier --write"
   }
 }
