@@ -13,6 +13,11 @@
     "format": "npm run prettier && npm run eslint && npm run stylelint",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
