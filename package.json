@@ -32,7 +32,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
-    "*.stylelint": "prettier --write"
+    "*.scss": "stylelint --fix",
+    "*.{js,html,scss}": "prettier --write"
   }
 }
