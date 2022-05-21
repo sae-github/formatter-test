@@ -11,7 +11,8 @@
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "format": "npm run prettier && npm run eslint && npm run stylelint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre-commit": "npm run prettier:fix && eslint"
   },
   "lint-staged": {
     "*.{js}": "eslint--fix",
