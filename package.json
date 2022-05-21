@@ -11,16 +11,12 @@
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "format": "npm run prettier && npm run eslint && npm run stylelint",
-    "prepare": "husky install",
-    "precommit": "lint-staged"
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": [
-      "npm run lint:fix"
-    ],
-    "*.css,scss": [
-      "npm run stylelint:fix"
-    ]
+    "*.{js}": "eslint--fix",
+    "*.{scss}": "stylelint --fix",
+    "*.{js,css,html}": "prettier --write"
   },
   "author": "",
   "license": "ISC",
