@@ -1,2 +1,2 @@
-const a = document.getElementById("a");
-a.textContent = "あああ";
+const a = document.getElementById('a');
+a.textContent = 'あああ';

@@ -7,9 +7,5 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-  },
-  rules: {
-    semi: "error",
-    quotes: ["error", "single"],
-  },
+  }
 };
