@@ -1,6 +1,10 @@
 .hogehoge {
   color: red;
 
+  &__aaa {
+    color: aqua;
+  }
+
   &__list {
     background-color: red;
   }
